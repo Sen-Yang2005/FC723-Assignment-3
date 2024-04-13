@@ -13,10 +13,10 @@ class EuclideanAlgorithms:
             a,b=b,a
 
         else:
-            while b != 0:
-                temp = b
-                b = a % b
-                a = temp
+            while b != 0: # if b not equal to 0,
+                temp = b  # then set a temp to store the present value of b
+                b = a % b  # get the reminder of a divide b
+                a = temp   # update the value of temp, that is the original value of b to a
             return a
 
 if __name__ == '__main__':
